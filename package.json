@@ -1,0 +1,15 @@
+{
+  "name": "leitnerwebschedule",
+  "version": "1.0.0",
+  "description": "A webpage for you to easily keep track of which Leitner cards to review",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "leitner",
+    "schedule"
+  ],
+  "author": "Andreas Wilcox",
+  "license": "MIT"
+}

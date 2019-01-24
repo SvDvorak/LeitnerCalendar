@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="rootContainer">
         <h1>Leitner Schedule</h1>
         <review-groups :startDate="selectedDate" />
         <start-date :selectedDate="selectedDate" @date-changed="startDateChanged" />
@@ -41,11 +41,27 @@ body {
     align-items: center;
 }
 
+.rootContainer {
+    margin: 1em 0em;
+}
+
 h1 {
+    font-family: Montserrat, Verdana;
+    font-size: 3em;
     text-align: center;
+    color: #444;
+    margin: 0.8em 0em;
 }
 
 p {
+    font-family: Raleway, Verdana;
     text-align: center;
+    color: #666;
+    margin: 0.5em 0em;
+}
+
+input {
+    font-family: Raleway, Verdana;
+    color: #111;
 }
 </style>

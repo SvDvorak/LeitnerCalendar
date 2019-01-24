@@ -1,5 +1,5 @@
 <template>
-    <p>Today you should review groups {{ groups }} (in that order).</p>
+    <p>Today you should review groups <b>{{ groups }}</b> (in that order).</p>
 </template>
 
 <script lang="ts">

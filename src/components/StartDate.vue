@@ -43,6 +43,5 @@ input {
     background: transparent;
     font-family: inherit;
     font-size: inherit;
-    font-style: italic;
 }
 </style>

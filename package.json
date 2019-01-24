@@ -3,13 +3,41 @@
   "version": "1.0.0",
   "description": "A webpage for you to easily keep track of which Leitner cards to review",
   "main": "index.js",
+  "watch": {
+    "build": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "ts,vue,html",
+      "quiet": false
+    }
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "npm-watch",
+    "build": "webpack"
   },
   "keywords": [
     "leitner",
     "schedule"
   ],
   "author": "Andreas Wilcox",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^2.1.0",
+    "npm-watch": "^0.6.0",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.2.4",
+    "vue": "^2.5.22",
+    "vue-class-component": "^6.3.2",
+    "vue-loader": "^15.5.1",
+    "vue-property-decorator": "^7.3.0",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.5.22",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1"
+  },
+  "dependencies": {
+    "moment": "^2.24.0",
+    "vuejs-datepicker": "^1.5.4"
+  }
 }

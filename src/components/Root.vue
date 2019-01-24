@@ -32,3 +32,20 @@ export default class Root extends Vue {
     }
 };
 </script>
+
+<style>
+body {
+    background: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+</style>

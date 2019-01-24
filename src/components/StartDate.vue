@@ -1,6 +1,7 @@
 <template>
-    <div>
-        <p>Based on a start date of <datepicker :value="selectedDate" v-on:selected="dateChanged" format="d MMMM yyyy"></datepicker></p>
+    <div class="container">
+        <p>Based on a start date of</p>
+        <datepicker class="datepicker" :value="selectedDate" v-on:selected="dateChanged" format="d MMMM yyyy"></datepicker>
     </div>
 </template>
 
@@ -22,3 +23,26 @@ export default class StartDate extends Vue {
     }
 }
 </script>
+
+<style>
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.datepicker {
+    margin-left: 0.5em;
+    display: flex;
+}
+/* No css class on that div, we want it centered like text next to it */
+.datepicker div:first-child {
+    align-self: center;
+}
+input {
+    border: 0px;
+    background: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: italic;
+}
+</style>

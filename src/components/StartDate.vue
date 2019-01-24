@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts">
-import { Vue, Component, Prop } from "vue-property-decorator";
+import { Vue, Component, Prop, Emit } from "vue-property-decorator";
 import Datepicker from "vuejs-datepicker";
 
 @Component({
@@ -16,8 +16,9 @@ import Datepicker from "vuejs-datepicker";
 export default class StartDate extends Vue {
     @Prop() selectedDate!: Date;
 
+    @Emit()
     dateChanged(selected: Date) {
-        this.$emit("date-changed", selected);
+        return selected;
     }
 }
 </script>

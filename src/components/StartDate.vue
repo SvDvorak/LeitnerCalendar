@@ -14,8 +14,7 @@ import Datepicker from "vuejs-datepicker";
     }
 })
 export default class StartDate extends Vue {
-    @Prop() initialDate!: Date; 
-    selectedDate = this.initialDate;
+    @Prop() selectedDate!: Date;
 
     dateChanged(selected: Date) {
         this.$emit("date-changed", selected);

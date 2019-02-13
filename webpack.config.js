@@ -1,6 +1,7 @@
 var path = require('path')
 var webpack = require('webpack')
 var VueLoaderPlugin = require('vue-loader/lib/plugin')
+var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   mode: 'development',
@@ -8,10 +9,13 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
-    filename: 'build.js'
+    filename: 'index_bundle.js'
   },
   plugins: [
-    new VueLoaderPlugin()
+    new VueLoaderPlugin(),
+    new HtmlWebpackPlugin({
+      title: 'Leitner Schedule'
+    })
   ],
   module: {
     rules: [
@@ -51,6 +55,12 @@ module.exports = {
           'css-loader'
         ]
       },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: [
+          'file-loader'
+        ]
+      }
     ]
   },
   resolve: {

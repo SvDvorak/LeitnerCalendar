@@ -4,6 +4,8 @@ services:
     container_name: leitner_web_schedule
     build: .
     command: npm run build
+    ports:
+      - '3100:80'
     #volumes:
       #- database:/home/app/reacty/database
 #volumes:

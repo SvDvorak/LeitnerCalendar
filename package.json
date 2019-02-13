@@ -2,7 +2,7 @@
   "name": "leitnerwebschedule",
   "version": "1.0.0",
   "description": "A webpage for you to easily keep track of which Leitner cards to review",
-  "main": "index.js",
+  "private": true,
   "watch": {
     "build": {
       "patterns": [
@@ -24,6 +24,8 @@
   "license": "MIT",
   "devDependencies": {
     "css-loader": "^2.1.0",
+    "file-loader": "^3.0.1",
+    "html-webpack-plugin": "^3.2.0",
     "npm-watch": "^0.6.0",
     "ts-loader": "^5.3.3",
     "typescript": "^3.2.4",
@@ -37,6 +39,7 @@
     "webpack-cli": "^3.2.1"
   },
   "dependencies": {
+    "express": "^4.16.4",
     "moment": "^2.24.0",
     "vuejs-datepicker": "^1.5.4"
   }

@@ -8,13 +8,14 @@ module.exports = {
   entry: './src/index.ts',
   output: {
     path: path.resolve(__dirname, './dist'),
-    publicPath: '/dist/',
+    publicPath: './',
     filename: 'index_bundle.js'
   },
   plugins: [
     new VueLoaderPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Leitner Schedule'
+      title: 'Leitner Schedule',
+      template: './src/index.html'
     })
   ],
   module: {

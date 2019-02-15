@@ -39,8 +39,8 @@
     "webpack-cli": "^3.2.1"
   },
   "dependencies": {
-    "express": "^4.16.4",
     "moment": "^2.24.0",
+    "npm": "^6.8.0",
     "vuejs-datepicker": "^1.5.4"
   }
 }

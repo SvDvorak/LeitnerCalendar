@@ -1,12 +1,14 @@
 version: '3'
 services:
-  web:
-    container_name: leitner_web_schedule
+  leitner-calendar:
+    container_name: leitner_calendar
     build: .
-    command: npm run build
+    image: leitner-calendar
+    networks:
+      - production
     ports:
-      - '3100:80'
-    #volumes:
-      #- database:/home/app/reacty/database
-#volumes:
-  #database: { }
+      - '3000:80'
+
+networks:
+  production:
+    external: true

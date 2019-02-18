@@ -4,5 +4,9 @@ services:
     container_name: leitner_calendar
     build: .
     image: leitner-calendar
-    ports:
-      - '80:80'
+
+# Uses external network with routing
+networks:
+  default:
+    external:
+      name: production

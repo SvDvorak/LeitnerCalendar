@@ -5,7 +5,6 @@ RUN apt-get update -qq &&\
     curl -sL https://deb.nodesource.com/setup_11.x | bash - &&\
     apt-get install -y nodejs
 
-RUN node -v && npm -v
 RUN useradd --user-group --create-home --shell /bin/false app;
 
 ENV HOME=/home/app

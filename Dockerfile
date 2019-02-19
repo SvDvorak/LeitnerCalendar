@@ -10,4 +10,5 @@ RUN npm run build
 
 FROM nginx as hoster
 
-COPY --from=builder /home/build/dist /usr/share/nginx/html
+COPY --from=builder /home/build/dist /var/www/leitnercalendar
+COPY nginx.conf /etc/nginx/conf.d/default.conf

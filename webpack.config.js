@@ -2,6 +2,7 @@ var path = require('path')
 var webpack = require('webpack')
 var VueLoaderPlugin = require('vue-loader/lib/plugin')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
+var WebappWebpackPlugin = require('webapp-webpack-plugin')
 
 module.exports = {
   mode: 'development',
@@ -16,7 +17,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Leitner Schedule',
       template: './src/index.html'
-    })
+    }),
+    new WebappWebpackPlugin('./src/icon.svg')
   ],
   module: {
     rules: [
@@ -43,7 +45,7 @@ module.exports = {
         }
       },
       {
-        test: /\.(png|jpg|gif|svg)$/,
+        test: /\.(png|jpg|gif|svg|ico)$/,
         loader: 'file-loader',
         options: {
           name: '[name].[ext]?[hash]'

@@ -3,6 +3,8 @@
         <h1>Leitner Schedule</h1>
         <review-groups :startDate="selectedDate" />
         <start-date :selectedDate="selectedDate" @date-changed="startDateChanged" />
+        <credits />
+        <github-reference />
     </div>
 </template>
 
@@ -10,11 +12,15 @@
 import { Vue, Component, Prop } from "vue-property-decorator";
 import ReviewGroupsComponent from "./ReviewGroups.vue";
 import StartDateComponent from "./StartDate.vue";
+import CreditsComponent from "./Credits.vue";
+import GithubReferenceComponent from "./GithubReference.vue";
 
 @Component({
     components: {
         "review-groups": ReviewGroupsComponent,
-        "start-date": StartDateComponent
+        "start-date": StartDateComponent,
+        "credits": CreditsComponent,
+        "github-reference": GithubReferenceComponent,
     }
 })
 export default class Root extends Vue {

@@ -1,5 +1,6 @@
 <template>
     <div class="rootContainer">
+        <img class="logo" src="../logo.svg" />
         <h1>Leitner Calendar</h1>
         <review-groups :startDate="selectedDate" />
         <start-date :selectedDate="selectedDate" @date-changed="startDateChanged" />
@@ -48,7 +49,14 @@ body {
 }
 
 .rootContainer {
-    margin: 1em 0em;
+    display: flex;
+    flex-direction: column;
+    margin: 3em 0em;
+}
+
+.logo {
+    align-self: center;
+    width: 24em;
 }
 
 h1 {
@@ -56,7 +64,8 @@ h1 {
     font-size: 3em;
     text-align: center;
     color: #444;
-    margin: 0.8em 0em;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
 }
 
 p {

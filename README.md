@@ -1,6 +1,6 @@
 # Leitner Calendar
 
-A simple website for you to help keep track of which group of Leitner flash cards to review today.
+A simple website for you to help keep track of which group of Leitner flash cards to review today. I'm currently hosting it at [leitnercalendar.anwilc.com](http://leitnercalendar.anwilc.com)
 
 I created this because I like using physical flashcards but I don't want a [physical calendar you have to keep up to date](https://youtu.be/uvF1XuseZFE?t=23). So this page does it for you! 
 

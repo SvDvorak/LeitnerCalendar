@@ -27,7 +27,8 @@ export default class StartDate extends Vue {
 <style>
 .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 .datepicker {
@@ -42,6 +43,8 @@ input {
     border: 0px;
     background: transparent;
     font-family: inherit;
-    font-size: inherit;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 0.2em;
 }
 </style>

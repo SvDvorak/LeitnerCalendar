@@ -4,6 +4,7 @@
         <h1>Leitner Calendar</h1>
         <review-groups :startDate="selectedDate" />
         <start-date :selectedDate="selectedDate" @date-changed="startDateChanged" />
+        <info />
         <credits />
         <github-reference />
     </div>
@@ -13,6 +14,7 @@
 import { Vue, Component, Prop } from "vue-property-decorator";
 import ReviewGroupsComponent from "./ReviewGroups.vue";
 import StartDateComponent from "./StartDate.vue";
+import InfoComponent from "./Info.vue";
 import CreditsComponent from "./Credits.vue";
 import GithubReferenceComponent from "./GithubReference.vue";
 
@@ -20,6 +22,7 @@ import GithubReferenceComponent from "./GithubReference.vue";
     components: {
         "review-groups": ReviewGroupsComponent,
         "start-date": StartDateComponent,
+        "info": InfoComponent,
         "credits": CreditsComponent,
         "github-reference": GithubReferenceComponent,
     }

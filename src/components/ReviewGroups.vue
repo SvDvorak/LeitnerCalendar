@@ -82,6 +82,7 @@ export default class ReviewGroups extends Vue {
 
 .groupNumbers p {
     font-size: 3em;
-    margin: 0.3em 0em;
+    margin-top: 0em;
+    margin-bottom: 0.3em;
 }
 </style>

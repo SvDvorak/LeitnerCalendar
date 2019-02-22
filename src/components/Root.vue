@@ -1,6 +1,6 @@
 <template>
     <div class="rootContainer">
-        <h1>Leitner Schedule</h1>
+        <h1>Leitner Calendar</h1>
         <review-groups :startDate="selectedDate" />
         <start-date :selectedDate="selectedDate" @date-changed="startDateChanged" />
         <credits />

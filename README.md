@@ -1,6 +1,11 @@
+<p align="center">
+  <img src="http://leitnercalendar.anwilc.com/logo.svg?97e5e7a3a52d4750397345d8775008d1" alt="Logo" width="600" />
+</p>
+<br>
+
 # Leitner Calendar
 
-A simple website for you to help keep track of which group of Leitner flash cards to review today. I'm currently hosting it at [leitnercalendar.anwilc.com](http://leitnercalendar.anwilc.com)
+A simple website for you to help keep track of which group of Leitner flash cards to review today. Check it out at [leitnercalendar.anwilc.com](http://leitnercalendar.anwilc.com)
 
 I created this because I like using physical flashcards but I don't want a [physical calendar you have to keep up to date](https://youtu.be/uvF1XuseZFE?t=23). So this page does it for you! 
 

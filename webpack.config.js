@@ -15,7 +15,7 @@ module.exports = {
   plugins: [
     new VueLoaderPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Leitner Schedule',
+      title: 'Leitner Calendar',
       template: './src/index.html'
     }),
     new WebappWebpackPlugin('./src/icon.svg')

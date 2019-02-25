@@ -2,7 +2,10 @@ version: '3'
 services:
   leitner-calendar:
     container_name: leitner_calendar
-    build: .
+    build:
+      context: .
+      args:
+        - NODE_ENV=production
     image: leitner-calendar
 
 # Uses external network with routing

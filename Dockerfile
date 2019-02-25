@@ -1,6 +1,8 @@
 FROM node as builder
 
 WORKDIR /home/build/
+
+ARG NODE_ENV=development
 COPY package.json package-lock.json /home/build/
 RUN npm install
 

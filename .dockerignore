@@ -1,1 +1,5 @@
+# VERY IMPORTANT
+# PhantomJS, which is installed depending on platform, is overriden by your local node_modules if you've run npm install locally.
+# Which in the case of a Windows host has a Windows version installed so build will fail on missing PhantomJS
+# Also, I believe performance is increased as well as folder isn't monitored and won't rerun stages on changes.
 **/node_modules

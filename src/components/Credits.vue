@@ -1,7 +1,7 @@
 <template>
     <div id="footer">
         Cookies are used to remember selected start date<br>
-        | Made by <a href="http://theanwil.com">Andreas Wilcox</a> | 
+        | Made by <a href="http://anwilc.com">Andreas Wilcox</a> | 
     </div>
 </template>
 

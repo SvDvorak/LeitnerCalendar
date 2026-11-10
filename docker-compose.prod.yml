@@ -7,6 +7,7 @@ services:
       args:
         - NODE_ENV=production
     image: leitner-calendar
+    restart: unless-stopped
 
 # Uses external network with routing
 networks:

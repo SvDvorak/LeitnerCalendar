@@ -6,3 +6,4 @@ services:
     image: leitner-calendar
     ports:
       - '80:80'
+    restart: unless-stopped
